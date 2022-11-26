@@ -36,26 +36,22 @@ class CloudModels()  {
 
     // Create cloudsim instance and Cloud Information Service (CIS) entity.
     val cloudSim = new CloudSim
-
+    // Create a broker instance
+    val broker = new DatacenterBrokerSimple(cloudSim)
     //    Creating instance for Saas with utils and data center
     val SaasDataCenterUtils = new DataCenter("Saas")
     val SaasDataCenter = SaasDataCenterUtils.createDatacenter(cloudSim)
-
     //    Creating instance for Paas with utils and data center
     val PaasDataCenterUtils = new DataCenter("Paas")
     val PaasDataCenter = PaasDataCenterUtils.createDatacenter(cloudSim)
-
     //    Creating instance for Iaas with utils and data center
     val IaasDataCenterUtils = new DataCenter("Iaas")
     val IaasDataCenter = IaasDataCenterUtils.createDatacenter(cloudSim)
     
-    // Create a broker instance
-    val broker = new DatacenterBrokerSimple(cloudSim)
 
     // Initiate the topology.
-    val networkTopology = new BriteNetworkTopology("./topology.brite")
+    val networkTopology = new BriteNetworkTopology("/Users/raghuraman/IdeaProjects/CloudSimPlusDemo/topology.brite")
     cloudSim.setNetworkTopology(networkTopology)
-
     networkTopology.mapNode(SaasDataCenter, 0)
     networkTopology.mapNode(PaasDataCenter, 1)
     networkTopology.mapNode(IaasDataCenter, 2)

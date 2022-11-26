@@ -12,26 +12,23 @@ object Simulation :
 
   @main
   def runSimulation =
-    logger.info("Starting execution of cloud simulations...")
-
-    logger.info("Starting VM and Cloudlet scheduling policies simulations...")
-
-    logger.info("Starting Space Shared scheduling cloud model simulation...")
+    logger.info("Starting the cloud simulations\n")
+    logger.info("Simulating different policies\n")
+    logger.info("Space Shared scheduling simulation\n")
     val spaceShared = new Scheduling("SpaceShared", new VmSchedulerSpaceShared(), new CloudletSchedulerSpaceShared())
     spaceShared.start()
 
-    logger.info("Starting Time Shared scheduling cloud model simulation...")
+    logger.info("Time Shared scheduling  simulation\n")
     val timeShared = new Scheduling("TimeShared", new VmSchedulerTimeShared(), new CloudletSchedulerTimeShared())
     timeShared.start()
 
-    logger.info("Starting simulation for VM Allocation Policy Round Robin...")
+    logger.info("VM Allocation Policy Round Robin\n")
     val roundRobin = new VmAllocation("RoundRobin", vmAllocation = new VmAllocationPolicyRoundRobin())
     roundRobin.start()
 
-    logger.info("Starting cloud models simulations...")
+    logger.info("Start the simulations")
     val cloudModels = new CloudModels()
     cloudModels.start()
-
-    logger.info("Finished cloud simulations...")
+    logger.info("Completed.\n")
 
 class Simulation
