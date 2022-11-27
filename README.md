@@ -80,4 +80,38 @@ The file are under resources folder. They are
  ![](images/Host.png)
  #### Virtual Machine Configuration:
  ![](images/Vm.png)
+ ## CloudModels.Scala:
+  This class is used to implement the different services and connect them using a BRITE topology network.
+  The different services implemented are :
+  #### 1)Software as a Service(Saas):
+  The Software as a Service (Saas) is a cloud model that is designed in such a way that the end users will only be able to modify and access application level objects. The infrastructure beyond the application layer is not under the control of the end user, it will be solely controlled by the cloud service provider.
+  #### 2)Platform as a Service(Paas):
+  The Platform as a service (Paas) is a cloud model that lets the users to develop, deploy, and monitor the application on the cloud platform. The users can control and access the whole application that is deployed on the platform. The VM, OS,and the infrastructure that the application is deployed on is not under the contorl of the user. It will be wholly controlled by the cloud service provider.
+  #### 3)Infrastructure as a Service(Iaas):
+  The Infrastructure as a Service (Iaas) will let the user to control the whole infrastructure including the virtual machines, OS, network to be implemented. This lets the user to control the performance and the cloud provider will only control and maintain the physical devices that run these infrastructures.
+  #### BRITE Topolgy:
+  Implements a network layer by reading the topology from a file in the BRITE format, the Boston university Representative Topology gEnerator, and generates a topological network from it. Information of this network is used to simulate latency in network traffic of CloudSim.
+  The topology file may contain more nodes than the number of entities in the simulation. It allows users to increase the scale of the simulation without changing the topology file. Nevertheless, each CloudSim entity must be mapped to one (and only one) BRITE node to allow proper work of the network simulation. Each BRITE node can be mapped to only one entity at a time. 
+ ## Scheduling.Scala:
+ The scheduling class will be used to implement Time Shared and Space shared schedling algorithm.
+ #### Time Shared Scheduling :
+ In this case, multiple workloads would split the necessary resources (task). Sharing is carried out through time-sliced allocation, where each workload is given access to the necessary resource for a specific period of time. The current job execution is paused and the resource is released once the specified time slice has passed.
+ The configuration used for Time shared is given below:    
+ - Number of Hosts = 2.  
+ - Number of VMs = 2.  
+ - Number of Cloudlets = 8.  
+ #### Space Shared Scheduling:
+ In this, the required resources are assigned solely for the execution of the desired workload and will only be released upon completion. Batch process scheduling is another name for space-sharing.
+ The configuration used for space shared is given below:  
+- Number of Hosts = 1. 
+- Number of VMs = 2. 
+- Number of Cloudlets = 10. 
+ ## VMAllocation.Scala:
+ The VM allocation class will implement the round robin vm allocation policy among the datacenters.
+ A circular Round-Robin VM placement policy that selects the next Host with sufficient resources to place a given VM. It then continues on to the next available Host when a new VM has to be placed after choosing a suitable Host. With a best-case complexity of O(1) and a worst-case complexity of O(N), where N is the number of hosts, this strategy has a good time efficiency.
+ The configuration used for round robin is given below:
+ - Number of Hosts = 4. 
+- Number of VMs = 8. 
+- Number of Cloudlets = 12. 
+ 
   
