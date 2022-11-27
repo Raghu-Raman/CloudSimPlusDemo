@@ -50,7 +50,7 @@ class CloudModels()  {
     
 
     // Initiate the topology.
-    val networkTopology = new BriteNetworkTopology("/Users/raghuraman/IdeaProjects/CloudSimPlusDemo/topology.brite")
+    val networkTopology = new BriteNetworkTopology("topology.brite")
     cloudSim.setNetworkTopology(networkTopology)
     networkTopology.mapNode(SaasDataCenter, 0)
     networkTopology.mapNode(PaasDataCenter, 1)

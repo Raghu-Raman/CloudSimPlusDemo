@@ -63,7 +63,7 @@ class VmAllocation(schedulerModel: String, vmAllocation: VmAllocationPolicy)  {
     // Build the simulation table
     val finishedCloudlet = broker.getCloudletFinishedList()
     CloudletsTableBuilder(finishedCloudlet).build()
-    VmLogger.info(s"Finished simulation of $schedulerModel VM ALlocation Policy.  \n\n\n")
+    VmLogger.info(s"Finished simulation of $schedulerModel VM Allocation Policy.  \n\n\n")
   }
 
 }

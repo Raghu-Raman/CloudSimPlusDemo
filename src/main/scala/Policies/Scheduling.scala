@@ -22,9 +22,9 @@ import scala.collection.JavaConverters.*
 
 /* A class to simulate Time shared and Space shared VM and Cloudlet scheduling policies.
 The parameters are
-  1)  schedulerModel 
-  2)  vmScheduler 
-  3)  cloudletScheduler 
+  1)  schedulerModel
+  2)  vmScheduler
+  3)  cloudletScheduler
  */
 class Scheduling(schedulerModel: String, vmScheduler: VmScheduler, cloudletScheduler: CloudletScheduler)  {
 
@@ -38,7 +38,7 @@ class Scheduling(schedulerModel: String, vmScheduler: VmScheduler, cloudletSched
     // Create a utility instance to create cloud entities.
     val datacenterutil = new DataCenter(schedulerModel, vmScheduler: VmScheduler, cloudletScheduler: CloudletScheduler)
 
-    // Create a datacenter 
+    // Create a datacenter
     val datacenter = datacenterutil.createDatacenter(cloudsim)
 
 //   Create a broker that will try to host customer's VMs at the first Datacenter found. If there isn't capacity in that one, it will try the other ones.
@@ -74,7 +74,7 @@ class Scheduling(schedulerModel: String, vmScheduler: VmScheduler, cloudletSched
       schedulingLogger.info(s"Cost: $dc Cloudlet $cloudletId is $cost")
     }
     )
-    schedulingLogger.info(s"Finished simulation .")
+    schedulingLogger.info(s"Finished simulation.")
 
     schedulingLogger.info(s"Completed simulation of the $schedulerModel VM and cloudlet scheduling policy. \n\n\n")
   }
