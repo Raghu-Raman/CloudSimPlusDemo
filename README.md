@@ -76,7 +76,7 @@ The file are under resources folder. They are
  ![](images/DataCenter.png)
  #### Cloudlet Configuration:
  ![](images/Cloudlets.png)
- #### Cloudlet Configuration:
+ #### Hosts Configuration:
  ![](images/Host.png)
  #### Virtual Machine Configuration:
  ![](images/Vm.png)
@@ -110,8 +110,63 @@ The file are under resources folder. They are
  The VM allocation class will implement the round robin vm allocation policy among the datacenters.
  A circular Round-Robin VM placement policy that selects the next Host with sufficient resources to place a given VM. It then continues on to the next available Host when a new VM has to be placed after choosing a suitable Host. With a best-case complexity of O(1) and a worst-case complexity of O(N), where N is the number of hosts, this strategy has a good time efficiency.
  The configuration used for round robin is given below:
- - Number of Hosts = 4. 
+- Number of Hosts = 4. 
 - Number of VMs = 8. 
 - Number of Cloudlets = 12. 
- 
-  
+## Output:
+#### Time Shared:
+###### Cloudlet Table:       
+![](images/TimeShared.png)
+###### Cost :
+![](images/TimeSharedCost.png)
+
+#### Space Shared:
+###### Cloudlet Table:       
+![](images/SpaceShared.png)
+###### Cost :
+![](images/SpaceSharedCost.png)
+
+
+#### Round Robin:
+###### Cloudlet Table:       
+![](images/RoundRobin.png)
+###### Cost :
+![](images/RoundRobinCost.png)
+
+
+#### Topology:
+###### Cloudlet Table:       
+![](images/Topology.png)
+
+##### Dockerizing the project into an image:
+In order to dockerize the project, we have to add the following to ``` addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.6")``` to the ```projects/plugins.sbt``` file. 
+If there is no ```plugins.sbt``` file, we have to create one.
+Then, following that we havwe to add the following line to ```build.sbt```,
+```enablePlugins(JavaAppPackaging)```.
+Following this, execute the following commands
+```
+sbt stage
+sbt docker:stage
+cat 
+```
+
+
+
+## How to run the project
+### Executing the runSimulation method
+1. Import the project in IntelliJ. Use  Get from VCS in Intellij clone the repository
+2. Execute the `runSimulation` main method from the Simulation class.
+
+### In SBT terminal
+1. Clone this repository
+2. Move the root of the project.
+3. Move to `src/main/scala/`.
+4. Run the command `$ sbt clean compile run`.
+
+## Test
+ After cloning the repository, move to the path `src/test/scala/CloudSimulation/testCloudSimulation.scala`.
+ Run the class `testCloudSimulation`.   
+ OR.   
+ Run the command ```sbt test``` in the terminal.    
+ There are 11 unit tests in the program.   
+
