@@ -1,10 +1,10 @@
 package Policies
 
-import HelperUtils.{CreateLogger, DataCenter, Cloudlets, DataCenterConfig, HostClass, VmConfigs}
+import HelperUtils.{Cloudlets, CreateLogger, DataCenter, DataCenterConfig, HostClass, VmConfigs}
 import com.typesafe.config.ConfigFactory
 import org.cloudbus.cloudsim.allocationpolicies.{VmAllocationPolicy, VmAllocationPolicyRoundRobin, VmAllocationPolicySimple}
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple
-import org.cloudbus.cloudsim.cloudlets.CloudletSimple
+import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.DatacenterSimple
 import org.cloudbus.cloudsim.hosts.HostSimple
@@ -63,6 +63,15 @@ class VmAllocation(schedulerModel: String, vmAllocation: VmAllocationPolicy)  {
     // Build the simulation table
     val finishedCloudlet = broker.getCloudletFinishedList()
     CloudletsTableBuilder(finishedCloudlet).build()
+
+    val scalaCloudletList: List[Cloudlet] = finishedCloudlet.asScala.toList
+    scalaCloudletList.map(cloudlet => {
+      val cloudletId = cloudlet.getId
+      val cost = cloudlet.getTotalCost()
+      val dc = cloudlet.getLastTriedDatacenter()
+      VmLogger.info(s"Cost: $dc Cloudlet $cloudletId is $cost")
+    }
+    )
     VmLogger.info(s"Finished simulation of $schedulerModel VM Allocation Policy.  \n\n\n")
   }
 
