@@ -6,12 +6,13 @@ import org.slf4j.LoggerFactory
 import org.cloudbus.cloudsim.schedulers.cloudlet.{CloudletSchedulerSpaceShared, CloudletSchedulerTimeShared}
 import org .cloudbus.cloudsim.schedulers.vm.{VmSchedulerSpaceShared, VmSchedulerTimeShared}
 import org.cloudbus.cloudsim.allocationpolicies.VmAllocationPolicyRoundRobin
+import java.io.File
+import java.io.PrintWriter
 
-object Simulation :
-  val logger = CreateLogger(classOf[Simulation])
+object Simulation {
+  val logger = CreateLogger(classOf[Simulation.type ])
 
-  @main
-  def runSimulation =
+  @main def runSimulation =
     logger.info("Starting the cloud simulations\n")
     logger.info("Simulating different policies\n")
     logger.info("Space Shared scheduling simulation\n")
@@ -30,5 +31,4 @@ object Simulation :
     val cloudModels = new CloudModels()
     cloudModels.start()
     logger.info("Completed.\n")
-
-class Simulation
+}
