@@ -137,3 +137,36 @@ The file are under resources folder. They are
 #### Topology:
 ###### Cloudlet Table:       
 ![](images/Topology.png)
+
+##### Dockerizing the project into an image:
+In order to dockerize the project, we have to add the following to ``` addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.6")``` to the ```projects/plugins.sbt``` file. 
+If there is no ```plugins.sbt``` file, we have to create one.
+Then, following that we havwe to add the following line to ```build.sbt```,
+```enablePlugins(JavaAppPackaging)```.
+Following this, execute the following commands
+```
+sbt stage
+sbt docker:stage
+cat 
+```
+
+
+
+## How to run the project
+### Executing the runSimulation method
+1. Import the project in IntelliJ. Use  Get from VCS in Intellij clone the repository
+2. Execute the `runSimulation` main method from the Simulation class.
+
+### In SBT terminal
+1. Clone this repository
+2. Move the root of the project.
+3. Move to `src/main/scala/`.
+4. Run the command `$ sbt clean compile run`.
+
+## Test
+ After cloning the repository, move to the path `src/test/scala/CloudSimulation/testCloudSimulation.scala`.
+ Run the class `testCloudSimulation`.   
+ OR.   
+ Run the command ```sbt test``` in the terminal.    
+ There are 11 unit tests in the program.   
+
