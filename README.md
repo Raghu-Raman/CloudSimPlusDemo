@@ -159,9 +159,18 @@ Following this, execute the following commands
 ```
 sbt stage
 sbt docker:stage
-cat 
+cat /target/docker/stage/Dockerfile
+sbt docker:publishLocal
 ```
+This will create the docker image in your local system.      
+Another way to do this is creating a dockerfile.    
+The Dockerfile will create the image locally.    
+Inorder to achieve this, we have to run the following command ```docker build -t cloudsim:[VERSION_NUMBER] .```
 
+#### Push the docker image to the repo
+
+The image can be created with the repo holder name ```docker tag cloudsim:1.0 raghuramanv/cloudsim:1.0```.
+Then, we have to push it into the repo using ``` docker push raghuramanv/cloudsim[VERSION_NUMBER]```.
 
 
 ## How to run the project
