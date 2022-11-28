@@ -1,6 +1,6 @@
 import HelperUtils.CreateLogger
 import Policies.Scheduling
-import Policies.{CloudModels, VmAllocation}
+import Policies.{CloudModels, VmAllocation, StarTopology,RingTopology,BusTopology}
 import com.typesafe.config.ConfigFactory
 import org.slf4j.LoggerFactory
 import org.cloudbus.cloudsim.schedulers.cloudlet.{CloudletSchedulerSpaceShared, CloudletSchedulerTimeShared}
@@ -30,5 +30,18 @@ object Simulation {
     logger.info("Start the simulations")
     val cloudModels = new CloudModels()
     cloudModels.start()
-    logger.info("Completed.\n")
+
+    logger.info("Create Star Topology")
+    val starTopology = new StarTopology()
+    starTopology.start()
+
+    logger.info("Create Ring Topology")
+    val ringTopology = new RingTopology()
+    ringTopology.start()
+
+    logger.info("Create Bus Topology")
+    val busTopology = new BusTopology()
+    busTopology.start()
+
+  logger.info("Completed.\n")
 }
