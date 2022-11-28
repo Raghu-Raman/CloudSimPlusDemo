@@ -1,0 +1,311 @@
+12:44:57.164 [main] INFO  java.lang.Class - Starting the cloud simulations
+
+12:44:57.165 [main] INFO  java.lang.Class - Simulating different policies
+
+12:44:57.165 [main] INFO  java.lang.Class - Space Shared scheduling simulation
+
+12:44:57.180 [main] INFO  java.lang.Class - Parsing configurations from SpaceShared.conf
+12:44:57.209 [main] INFO  java.lang.Class - Configuration parsing completed from SpaceShared.conf.
+12:44:57.209 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.209 [main] INFO  java.lang.Class - Number of hosts: 1
+12:44:57.209 [main] INFO  java.lang.Class - Number of VMs: 2
+12:44:57.209 [main] INFO  java.lang.Class - Number of cloudlets: 10
+12:44:57.293 [main] INFO  java.lang.Class - Initiating VMs
+12:44:57.297 [main] INFO  java.lang.Class - Initiating cloudlets
+12:44:57.298 [main] INFO  java.lang.Class - Linking VMs, cloudlets to the broker
+12:44:57.298 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 6.4.3 ==================
+
+12:44:57.299 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+12:44:57.300 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+12:44:57.300 [main] INFO  CloudSim - Entities started.
+12:44:57.302 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+12:44:57.302 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+12:44:57.302 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+12:44:57.305 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+12:44:57.306 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 0/DC 1
+12:44:57.306 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 0 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 1 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 0 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 1 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 0 in Host 0/DC 1.
+12:44:57.307 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 1 in Host 0/DC 1.
+12:44:57.308 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 8 to Vm 0 in Host 0/DC 1.
+12:44:57.308 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 9 to Vm 1 in Host 0/DC 1.
+12:44:57.308 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 10 waiting Cloudlets submitted to some VM.
+12:44:57.314 [main] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+12:44:57.314 [main] INFO  DatacenterBroker - 40.11: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+12:44:57.315 [main] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Cloudlet 2 finished in Vm 0 and returned to broker.
+12:44:57.315 [main] INFO  DatacenterBroker - 80.33: DatacenterBrokerSimple2: Cloudlet 3 finished in Vm 1 and returned to broker.
+12:44:57.316 [main] INFO  DatacenterBroker - 120.55: DatacenterBrokerSimple2: Cloudlet 4 finished in Vm 0 and returned to broker.
+12:44:57.316 [main] INFO  DatacenterBroker - 120.55: DatacenterBrokerSimple2: Cloudlet 5 finished in Vm 1 and returned to broker.
+12:44:57.317 [main] INFO  DatacenterBroker - 160.77: DatacenterBrokerSimple2: Cloudlet 6 finished in Vm 0 and returned to broker.
+12:44:57.317 [main] INFO  DatacenterBroker - 160.77: DatacenterBrokerSimple2: Cloudlet 7 finished in Vm 1 and returned to broker.
+12:44:57.318 [main] INFO  DatacenterBroker - 200.99: DatacenterBrokerSimple2: Cloudlet 8 finished in Vm 0 and returned to broker.
+12:44:57.318 [main] INFO  DatacenterBroker - 200.99: DatacenterBrokerSimple2: Cloudlet 9 finished in Vm 1 and returned to broker.
+12:44:57.319 [main] INFO  CloudSim - 201.10: Processing last events before simulation shutdown.
+12:44:57.319 [main] INFO  DatacenterBroker - 201.10: DatacenterBrokerSimple2 is shutting down...
+12:44:57.319 [main] INFO  DatacenterBroker - 201.10: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+12:44:57.319 [main] INFO  DatacenterBroker - 201.10: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+12:44:57.321 [main] INFO  Datacenter - 201.10: DatacenterSimple: Vm 1 destroyed on Host 0/DC 1. 
+12:44:57.321 [main] INFO  Datacenter - 201.10: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+12:44:57.321 [main] INFO  CloudSim - Simulation: No more future events
+
+12:44:57.321 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+12:44:57.322 [main] INFO  CloudSim - 
+================== Simulation finished at time 201.10 ==================
+
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 0 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 1 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 2 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 3 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 4 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 5 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 6 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 7 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 8 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 9 is 0.3
+12:44:57.336 [main] INFO  java.lang.Class - Finished simulation .
+12:44:57.336 [main] INFO  java.lang.Class - Completed simulation of the SpaceShared VM and cloudlet scheduling policy. 
+
+
+
+12:44:57.336 [main] INFO  java.lang.Class - Time Shared scheduling  simulation
+
+12:44:57.337 [main] INFO  java.lang.Class - Parsing configurations from TimeShared.conf
+12:44:57.342 [main] INFO  java.lang.Class - Configuration parsing completed from TimeShared.conf.
+12:44:57.342 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.342 [main] INFO  java.lang.Class - Number of hosts: 2
+12:44:57.342 [main] INFO  java.lang.Class - Number of VMs: 2
+12:44:57.342 [main] INFO  java.lang.Class - Number of cloudlets: 8
+12:44:57.342 [main] INFO  java.lang.Class - Initiating VMs
+12:44:57.342 [main] INFO  java.lang.Class - Initiating cloudlets
+12:44:57.342 [main] INFO  java.lang.Class - Linking VMs, cloudlets to the broker
+12:44:57.342 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 6.4.3 ==================
+
+12:44:57.342 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+12:44:57.342 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+12:44:57.343 [main] INFO  CloudSim - Entities started.
+12:44:57.343 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+12:44:57.343 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+12:44:57.343 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+12:44:57.344 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+12:44:57.345 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 1/DC 1
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 0 in Host 0/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 1 in Host 1/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 0 in Host 0/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 1 in Host 1/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 0 in Host 0/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 1 in Host 1/DC 1.
+12:44:57.345 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 8 waiting Cloudlets submitted to some VM.
+12:44:57.346 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 2 finished in Vm 0 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 4 finished in Vm 0 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 6 finished in Vm 0 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 3 finished in Vm 1 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 5 finished in Vm 1 and returned to broker.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.22: DatacenterBrokerSimple2: Cloudlet 7 finished in Vm 1 and returned to broker.
+12:44:57.347 [main] INFO  CloudSim - 160.33: Processing last events before simulation shutdown.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.33: DatacenterBrokerSimple2 is shutting down...
+12:44:57.347 [main] INFO  DatacenterBroker - 160.33: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+12:44:57.347 [main] INFO  DatacenterBroker - 160.33: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+12:44:57.347 [main] INFO  Datacenter - 160.33: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+12:44:57.347 [main] INFO  Datacenter - 160.33: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+12:44:57.347 [main] INFO  CloudSim - Simulation: No more future events
+
+12:44:57.347 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+12:44:57.347 [main] INFO  CloudSim - 
+================== Simulation finished at time 160.33 ==================
+
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 0 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 2 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 4 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 6 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 1 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 3 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 5 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Cost: Datacenter 1 Cloudlet 7 is 0.3
+12:44:57.350 [main] INFO  java.lang.Class - Finished simulation .
+12:44:57.350 [main] INFO  java.lang.Class - Completed simulation of the TimeShared VM and cloudlet scheduling policy. 
+
+
+
+12:44:57.350 [main] INFO  java.lang.Class - VM Allocation Policy Round Robin
+
+12:44:57.351 [main] INFO  java.lang.Class - Parsing configurations from RoundRobin.conf
+12:44:57.354 [main] INFO  java.lang.Class - Configuration parsing completed from RoundRobin.conf.
+12:44:57.354 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.354 [main] INFO  java.lang.Class - Number of hosts: 4
+12:44:57.354 [main] INFO  java.lang.Class - Number of VMs: 8
+12:44:57.354 [main] INFO  java.lang.Class - Number of cloudlets: 12
+12:44:57.355 [main] INFO  java.lang.Class - Initiating VMs
+12:44:57.355 [main] INFO  java.lang.Class - Initiating cloudlets
+12:44:57.355 [main] INFO  java.lang.Class - Linking cloudlets, Vm to the broker
+12:44:57.355 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 6.4.3 ==================
+
+12:44:57.355 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+12:44:57.355 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+12:44:57.355 [main] INFO  CloudSim - Entities started.
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 2 in DatacenterSimple1
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 3 in DatacenterSimple1
+12:44:57.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 4 in DatacenterSimple1
+12:44:57.356 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 5 in DatacenterSimple1
+12:44:57.356 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 6 in DatacenterSimple1
+12:44:57.356 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 7 in DatacenterSimple1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 0 has been allocated to Host 0/DC 1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 1 has been allocated to Host 1/DC 1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 2 has been allocated to Host 2/DC 1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 3 has been allocated to Host 3/DC 1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 4 has been allocated to Host 0/DC 1
+12:44:57.356 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 5 has been allocated to Host 1/DC 1
+12:44:57.357 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 6 has been allocated to Host 2/DC 1
+12:44:57.357 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicyRoundRobin: Vm 7 has been allocated to Host 3/DC 1
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 2 to Vm 2 in Host 2/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 3 to Vm 3 in Host 3/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 4 to Vm 4 in Host 0/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 5 to Vm 5 in Host 1/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 6 to Vm 6 in Host 2/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 7 to Vm 7 in Host 3/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 8 to Vm 0 in Host 0/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 9 to Vm 1 in Host 1/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 10 to Vm 2 in Host 2/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 11 to Vm 3 in Host 3/DC 1.
+12:44:57.357 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 12 waiting Cloudlets submitted to some VM.
+12:44:57.359 [main] INFO  DatacenterBroker - 8.11: DatacenterBrokerSimple2: Cloudlet 4 finished in Vm 4 and returned to broker.
+12:44:57.359 [main] INFO  DatacenterBroker - 8.11: DatacenterBrokerSimple2: Cloudlet 5 finished in Vm 5 and returned to broker.
+12:44:57.359 [main] INFO  DatacenterBroker - 8.11: DatacenterBrokerSimple2: Cloudlet 6 finished in Vm 6 and returned to broker.
+12:44:57.359 [main] INFO  DatacenterBroker - 8.11: DatacenterBrokerSimple2: Cloudlet 7 finished in Vm 7 and returned to broker.
+12:44:57.360 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+12:44:57.360 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 8 finished in Vm 0 and returned to broker.
+12:44:57.360 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+12:44:57.360 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 9 finished in Vm 1 and returned to broker.
+12:44:57.360 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 2 finished in Vm 2 and returned to broker.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 10 finished in Vm 2 and returned to broker.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 3 finished in Vm 3 and returned to broker.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.21: DatacenterBrokerSimple2: Cloudlet 11 finished in Vm 3 and returned to broker.
+12:44:57.361 [main] INFO  CloudSim - 16.32: Processing last events before simulation shutdown.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2 is shutting down...
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 7 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 6 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 5 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 4 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 3 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 2 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+12:44:57.361 [main] INFO  DatacenterBroker - 16.32: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+12:44:57.361 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 7 destroyed on Host 3/DC 1. 
+12:44:57.361 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 6 destroyed on Host 2/DC 1. 
+12:44:57.361 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 5 destroyed on Host 1/DC 1. 
+12:44:57.361 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 4 destroyed on Host 0/DC 1. 
+12:44:57.362 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 3 destroyed on Host 3/DC 1. 
+12:44:57.362 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 2 destroyed on Host 2/DC 1. 
+12:44:57.362 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+12:44:57.362 [main] INFO  Datacenter - 16.32: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+12:44:57.362 [main] INFO  CloudSim - Simulation: No more future events
+
+12:44:57.362 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+12:44:57.362 [main] INFO  CloudSim - 
+================== Simulation finished at time 16.32 ==================
+
+12:44:57.364 [main] INFO  java.lang.Class - Finished simulation of RoundRobin VM ALlocation Policy.  
+
+
+
+12:44:57.364 [main] INFO  java.lang.Class - Start the simulations
+12:44:57.365 [main] INFO  java.lang.Class - Starting execution of cloud models simulation.
+12:44:57.365 [main] INFO  java.lang.Class - Parsing configurations from Saas.conf
+12:44:57.368 [main] INFO  java.lang.Class - Configuration parsing completed from Saas.conf.
+12:44:57.368 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.368 [main] INFO  java.lang.Class - Number of hosts: 2
+12:44:57.368 [main] INFO  java.lang.Class - Number of VMs: 1
+12:44:57.368 [main] INFO  java.lang.Class - Number of cloudlets: 2
+12:44:57.368 [main] INFO  java.lang.Class - Parsing configurations from Paas.conf
+12:44:57.371 [main] INFO  java.lang.Class - Configuration parsing completed from Paas.conf.
+12:44:57.371 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.371 [main] INFO  java.lang.Class - Number of hosts: 2
+12:44:57.371 [main] INFO  java.lang.Class - Number of VMs: 1
+12:44:57.371 [main] INFO  java.lang.Class - Number of cloudlets: 2
+12:44:57.371 [main] INFO  java.lang.Class - Parsing configurations from Iaas.conf
+12:44:57.374 [main] INFO  java.lang.Class - Configuration parsing completed from Iaas.conf.
+12:44:57.374 [main] INFO  java.lang.Class - Datacenter configuration are as:
+12:44:57.374 [main] INFO  java.lang.Class - Number of hosts: 8
+12:44:57.374 [main] INFO  java.lang.Class - Number of VMs: 1
+12:44:57.374 [main] INFO  java.lang.Class - Number of cloudlets: 2
+12:44:57.378 [main] INFO  BriteNetworkTopology - Topology file: /Users/raghuraman/IdeaProjects/CloudSimPlusDemo/topology.brite
+12:44:57.378 [main] INFO  java.lang.Class - Initiating VMs
+12:44:57.378 [main] INFO  java.lang.Class - Intiating cloudlets
+12:44:57.378 [main] INFO  java.lang.Class - Submitting VMs and cloudlets to broker
+12:44:57.378 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 6.4.3 ==================
+
+12:44:57.378 [main] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+12:44:57.379 [main] INFO  Datacenter - 0.00: DatacenterSimple2 is starting...
+12:44:57.379 [main] INFO  Datacenter - 0.00: DatacenterSimple3 is starting...
+12:44:57.379 [main] INFO  Datacenter - 0.00: DatacenterSimple4 is starting...
+12:44:57.379 [main] INFO  CloudSim - Entities started.
+12:44:57.379 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 3 datacenters(s) received.
+12:44:57.379 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in DatacenterSimple2
+12:44:57.379 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 1 in DatacenterSimple2
+12:44:57.379 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 2 in DatacenterSimple2
+12:44:57.379 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 2
+12:44:57.379 [main] WARN  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 1 in Datacenter 2
+12:44:57.379 [main] WARN  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 2 in Datacenter 2
+12:44:57.380 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Trying to create Vm 1 in DatacenterSimple3
+12:44:57.380 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple1: Trying to create Vm 2 in DatacenterSimple3
+12:44:57.380 [main] INFO  VmAllocationPolicy - 0.10: VmAllocationPolicySimple: Vm 1 has been allocated to Host 0/DC 3
+12:44:57.380 [main] WARN  VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 2 in Datacenter 3
+12:44:57.380 [main] INFO  DatacenterBroker - 0.20: DatacenterBrokerSimple1: Trying to create Vm 2 in DatacenterSimple4
+12:44:57.380 [main] INFO  VmAllocationPolicy - 0.20: VmAllocationPolicySimple: Vm 2 has been allocated to Host 0/DC 4
+12:44:57.380 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 2.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 1 to Vm 1 in Host 0/DC 3.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 2 to Vm 2 in Host 0/DC 4.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 3 to Vm 0 in Host 0/DC 2.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 4 to Vm 1 in Host 0/DC 3.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: Sending Cloudlet 5 to Vm 2 in Host 0/DC 4.
+12:44:57.381 [main] INFO  DatacenterBroker - 0.30: DatacenterBrokerSimple1: All 6 waiting Cloudlets submitted to some VM.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 3 finished in Vm 0 and returned to broker.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 1 finished in Vm 1 and returned to broker.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 4 finished in Vm 1 and returned to broker.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 2 finished in Vm 2 and returned to broker.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.36: DatacenterBrokerSimple1: Cloudlet 5 finished in Vm 2 and returned to broker.
+12:44:57.382 [main] INFO  CloudSim - 30.47: Processing last events before simulation shutdown.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.47: DatacenterBrokerSimple1 is shutting down...
+12:44:57.382 [main] INFO  DatacenterBroker - 30.47: DatacenterBrokerSimple1: Requesting Vm 2 destruction.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.47: DatacenterBrokerSimple1: Requesting Vm 1 destruction.
+12:44:57.382 [main] INFO  DatacenterBroker - 30.47: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+12:44:57.382 [main] INFO  Datacenter - 30.47: DatacenterSimple: Vm 0 destroyed on Host 0/DC 2. 
+12:44:57.383 [main] INFO  Datacenter - 30.47: DatacenterSimple: Vm 1 destroyed on Host 0/DC 3. 
+12:44:57.383 [main] INFO  Datacenter - 30.47: DatacenterSimple: Vm 2 destroyed on Host 0/DC 4. 
+12:44:57.383 [main] INFO  CloudSim - Simulation: No more future events
+
+12:44:57.383 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+12:44:57.383 [main] INFO  Datacenter - 30.47: DatacenterSimple3 is shutting down...
+12:44:57.383 [main] INFO  CloudSim - 
+================== Simulation finished at time 30.47 ==================
+
+12:44:57.392 [main] INFO  java.lang.Class - Cost: Datacenter 2 Cloudlet 0 is 0.2048
+12:44:57.392 [main] INFO  java.lang.Class - Cost: Datacenter 3 Cloudlet 1 is 0.24576
+12:44:57.392 [main] INFO  java.lang.Class - Cost: Datacenter 4 Cloudlet 2 is 0.8999999999999999
+12:44:57.392 [main] INFO  java.lang.Class - Cost: Datacenter 2 Cloudlet 3 is 0.6
+12:44:57.393 [main] INFO  java.lang.Class - Cost: Datacenter 3 Cloudlet 4 is 0.72
+12:44:57.393 [main] INFO  java.lang.Class - Cost: Datacenter 4 Cloudlet 5 is 0.8999999999999999
+12:44:57.393 [main] INFO  java.lang.Class - Finished simulation of cloud models simulation.
+12:44:57.393 [main] INFO  java.lang.Class - Completed.
+
