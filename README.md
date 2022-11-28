@@ -171,7 +171,10 @@ Inorder to achieve this, we have to run the following command ```docker build -t
 
 The image can be created with the repo holder name ```docker tag cloudsim:1.0 raghuramanv/cloudsim:1.0```.
 Then, we have to push it into the repo using ``` docker push raghuramanv/cloudsim[VERSION_NUMBER]```.
+ 
+#### How to pull the docker Image?
 
+The docker container can be pulled by running the following command ```docker pull raghuramanv\cloudsim:latest```.
 
 ## How to run the project
 ### Executing the runSimulation method
