@@ -89,9 +89,15 @@ The file are under resources folder. They are
   The Platform as a service (Paas) is a cloud model that lets the users to develop, deploy, and monitor the application on the cloud platform. The users can control and access the whole application that is deployed on the platform. The VM, OS,and the infrastructure that the application is deployed on is not under the contorl of the user. It will be wholly controlled by the cloud service provider.
   #### 3)Infrastructure as a Service(Iaas):
   The Infrastructure as a Service (Iaas) will let the user to control the whole infrastructure including the virtual machines, OS, network to be implemented. This lets the user to control the performance and the cloud provider will only control and maintain the physical devices that run these infrastructures.
+  ## Topologies:
   #### BRITE Topolgy:
   Implements a network layer by reading the topology from a file in the BRITE format, the Boston university Representative Topology gEnerator, and generates a topological network from it. Information of this network is used to simulate latency in network traffic of CloudSim.
   The topology file may contain more nodes than the number of entities in the simulation. It allows users to increase the scale of the simulation without changing the topology file. Nevertheless, each CloudSim entity must be mapped to one (and only one) BRITE node to allow proper work of the network simulation. Each BRITE node can be mapped to only one entity at a time. 
+  The other topologies that have been implemented are:    
+  - Ring
+  - Bus
+  - Star
+  
  ## Scheduling.Scala:
  The scheduling class will be used to implement Time Shared and Space shared schedling algorithm.
  #### Time Shared Scheduling :
@@ -135,8 +141,14 @@ The file are under resources folder. They are
 
 
 #### Topology:
-###### Cloudlet Table:       
+###### Brite:       
 ![](images/Topology.png)
+##### Star:
+![](images/StarTopology.png)
+##### Ring:
+![](images/RingTopology.png)
+##### Bus:
+![](images/BusTopology.png)
 
 ##### Dockerizing the project into an image:
 In order to dockerize the project, we have to add the following to ``` addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.6")``` to the ```projects/plugins.sbt``` file. 
