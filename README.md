@@ -178,7 +178,7 @@ The docker container can be pulled by running the following command ```docker pu
 
 ## How to run the project
 ### Executing the runSimulation method
-1. Import the project in IntelliJ. Use  Get from VCS in Intellij clone the repository
+1. Import the project in IntelliJ. Use  Get from VCS in Intellij clone the repository. Add 'topoogy.brite' before execution.
 2. Execute the `runSimulation` main method from the Simulation class.
 
 ### In SBT terminal
